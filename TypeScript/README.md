@@ -34,6 +34,4 @@ This project covers TypeScript fundamentals including basic types, interfaces, c
 | 9 | Namespace & Declaration merging | `task_4` |
 | 10 | Brand convention & Nominal typing | `task_5` |
 
-## Author
 
-Holberton School
