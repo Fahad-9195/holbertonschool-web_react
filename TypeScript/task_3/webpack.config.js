@@ -12,28 +12,20 @@ module.exports = {
       {
         test: /\.tsx?$/,
         loader: 'ts-loader',
-        options: {
-          transpileOnly: true
-        }
+        options: { transpileOnly: true }
       }
     ]
   },
-  resolve: {
-    extensions: [".tsx", ".ts", ".js"]
-  },
+  resolve: { extensions: [".tsx", ".ts", ".js"] },
   devServer: {
-    static: {
-      directory: path.join(__dirname, 'dist'),
-    },
+    static: { directory: path.join(__dirname, 'dist') },
     open: true,
     port: 8080,
   },
   plugins: [
     new ForkTsCheckerWebpackPlugin(),
     new CleanWebpackPlugin(),
-    new HtmlWebpackPlugin({
-      title: "Development"
-    })
+    new HtmlWebpackPlugin({ title: "Development" })
   ],
   output: {
     filename: "bundle.js",
